@@ -4,7 +4,29 @@ return {
     new = function()
         return {
             get_trigger_characters = function()
-                return { "\\" }
+                return {
+                    "'",
+                    ' ',
+                    '!',
+                    '"',
+                    '(',
+                    ')',
+                    '*',
+                    '+',
+                    '-',
+                    '.',
+                    '<',
+                    '=',
+                    '>',
+                    '^',
+                    '_',
+                    '`',
+                    '{',
+                    '|',
+                    '}',
+                    '~',
+                    [[\]],
+                }
             end,
             get_keyword_pattern = function()
                 return "\\\\[^[:blank:]]*"
